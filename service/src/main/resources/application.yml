@@ -1,0 +1,10 @@
+reactor:
+  tools:
+    agent:
+      installed: true
+
+kafka:
+  bootstrapServerConfig: localhost:9092
+
+text-client:
+  url: http://localhost:8080
