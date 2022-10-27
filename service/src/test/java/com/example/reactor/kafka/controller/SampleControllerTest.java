@@ -113,7 +113,6 @@ class SampleControllerTest {
                         .withStatus(HttpStatus.OK.value())));
 //        UUID requestId = UUID.fromString("68fd8e0d-f1ba-4eae-8ba9-172deee2cc43");
 //        sendToTopic(requestId, requestText.toUpperCase());
-        sendToTopic(UUID.randomUUID(), "fuck");
         mockServer.addMockServiceRequestListener((request, response) -> {
             try {
                 TextClient.Request value = mapper.readValue(request.getBody(), TextClient.Request.class);
